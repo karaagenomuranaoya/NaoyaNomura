@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    color: #666;
+    background-color: #aacfd0;
+}
+
+a {
+    color: #fff;
+}
+
+h2 {
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+div {
+    width: 100px;
+}
