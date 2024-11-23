@@ -1,25 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>野村直矢の開発室</title>
-    <link rel="styleSheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Naoya Nomura's Laboratory</title>
+    <link rel="canonical" href="https://popo-design.net/template/">
+    <link rel="stylesheet" media="all" href="css/ress.min.css" />
+    <link rel="stylesheet" media="all" href="css/style.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/style.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
 </head>
 
 <body>
-    <h1>Naoya Nomura's laboratory</h1>
-    <div>
-        <h2>Works</h2>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col span-12">
+                    <div class="head">
+                        <h1><a href="index.html">Naoya Nomura's Laboratory</a></h1>
+                        <div class="snsbox">
+                            <img src="img/in-icon.png" alt="Instagram">
+                            <img src="img/fb-icon.png" alt="Facebook">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-12">
+                    <nav>
+                        <div id="open"></div>
+                        <div id="close"></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mainimg">
+        <img src="img/intro.JPEG" alt="メイン画像">
     </div>
-    <h3><a href="https://todo-40i4.onrender.com/">TODO</a></h3>
-    <p>初めてReactを使って書いたシンプルなTODOアプリです。</p>
-    <p>タスクを入力すると未完了リストに追加されます。</p>
-    <p>完了を押すとタスクが完了リストに移動し，</p>
-    <p>削除ボタンを押すと消えます。</p>
-    <p>完了リストのタスクは戻すこともでき，</p>
-    <p>保存機能があるので，画面更新やブラウザの再起動が合ってもタスクが消えません。</p>
+    <main>
+        <section>
+            <div class="container">
+                <h2 class="catch">Works</h2>
+                <div class="row">
+                    <div class="col span-4">
+                        <figure>
+                            <a href="https://tabeletennisscounter.onrender.com">
+                                <img src="img/takkyuu.jpg" alt="卓球得点表アプリ画像">
+                                <figcaption>卓球の得点をカウントするアプリです。何点先取かも選べます。どちらかが勝つと得点ボタンは停止し、リセットのみが可能になります。</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col span-4">
+                        <figure>
+                            <a href="https://todo-40i4.onrender.com/">
+                                <img src="img/todo.jpg" alt="卓球得点表アプリ画像">
+                                <figcaption>Reactで作ったTODOアプリです。useStatesで内容を保存するため、ページが更新されたりブラウザが再起動してもTODOが消えません。
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col span-4">
+                        <figure>
+                            <img src="img/catch.jpg" alt="画像">
+                            <figcaption>キャプション</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-4">
+                        <figure>
+                            <img src="img/catch.jpg" alt="画像">
+                            <figcaption>キャプション</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col span-4">
+                        <figure>
+                            <img src="img/catch.jpg" alt="画像">
+                            <figcaption>キャプション</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col span-4">
+                        <figure>
+                            <img src="img/catch.jpg" alt="画像">
+                            <figcaption>キャプション</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p class="center"><button>その他のギャラリー</button></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col span-4">
+                    <h5>フッター１</h5>
+                    <p>ここにSNSやテキストなどが入ります。SNSやテキストなどが入ります。</p>
+                </div>
+                <div class="col span-4">
+                    <h5>フッター２</h5>
+                    <p>ここにSNSやテキストなどが入ります。SNSやテキストなどが入ります。</p>
+                </div>
+                <div class="col span-4">
+                    <h5>フッター３</h5>
+                    <p>ここにSNSやテキストなどが入ります。SNSやテキストなどが入ります。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <hr>
+                    Copyright © Naoya Nomura
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="pagetop"><a href="#">TOP</a></p>
 </body>
 
 </html>
