@@ -41,7 +41,7 @@ main {
     font-size: 22px;
     width: 33.33%;
     line-height: 230%;
-    border: 2px solid black;
+    border: 2px solid #333333;
     border-radius: 8px;
 }
 
@@ -145,4 +145,17 @@ footer {
         gap: 10px;
     }
 
+    #about img {
+        width: 80%;
+        border-radius: 3%;
+    }
+
+
+
+    .item2 {
+        font-size: 22px;
+        line-height: 150%;
+        border: 1px solid #333333;
+        border-radius: 8px;
+    }
 }
