@@ -110,67 +110,58 @@ footer {
     color: #ADD8E6;
 }
 
-
 @media screen and (max-width: 768px) {
-
-    /* スマホ専用のスタイルをここに記述 */
-    /* ナビゲーションの縦並び */
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /* 自己紹介セクションを縦並びに */
     .container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        align-items: center;
-    }
-
-    /* 作品セクションのグリッド調整 */
-    .works {
-        display: grid;
-        grid-template-columns: 1fr;
-        /* スマホでは1列 */
+        align-items: stretch;
+        /* 左寄せ */
+        padding: 0 15px;
+        /* 左右余白 */
         gap: 20px;
-    }
-
-    /* ギャラリーの2列表示 */
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* スマホで2列 */
-        gap: 10px;
+        /* 子要素間の間隔 */
     }
 
     #about img {
-        margin: 10px 0;
-        /* 上下の余白を適度に確保 */
-        padding: 20px;
         width: 100%;
-        /* スマホで全幅を占める */
-        border: 8px;
-    }
-
-    .item {
-        margin: 10px 0;
-        /* 上下の余白を適度に確保 */
-        padding: 20px;
-        width: 100%;
-        /* スマホで全幅を占める */
-    }
-
-    .item2 {
-        font-size: 22px;
-        line-height: 150%;
-        border: 1px solid #333333;
+        /* スマホでは全幅 */
+        max-width: 300px;
+        /* 最大幅を設定 */
+        margin: 0 auto;
+        /* 中央揃え */
+        display: block;
+        /* ブロック要素として扱う */
         border-radius: 8px;
-        margin: 10px 0;
-        /* 上下の余白を適度に確保 */
-        padding: 20px;
+        /* 角を丸く */
+    }
+
+    .item,
+    .item2 {
+        margin: 0 auto;
+        /* 横方向の中央揃え */
         width: 100%;
-        /* スマホで全幅を占める */
+        /* スマホでは全幅 */
+        text-align: left;
+        /* テキストを左寄せ */
+        padding: 15px;
+        /* 内側の余白 */
+        box-sizing: border-box;
+        /* パディングを含めて幅を計算 */
+    }
+
+    .works {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* 1列表示 */
+        gap: 20px;
+        /* 子要素間の間隔 */
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2列表示 */
+        gap: 10px;
     }
 }
