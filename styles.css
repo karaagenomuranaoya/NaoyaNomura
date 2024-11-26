@@ -136,6 +136,10 @@ footer {
         /* 角を丸く */
     }
 
+    .item {
+        font-size: 20px;
+    }
+
     .item,
     .item2 {
         margin: 0 auto;
