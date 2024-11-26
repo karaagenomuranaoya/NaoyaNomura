@@ -51,10 +51,6 @@ section {
 
 #about img {
     width: 33.33%;
-    aspect-ratio: 16 / 9;
-    object-fit: contain;
-    height: auto;
-    display: block;
     border-radius: 5%;
 }
 
