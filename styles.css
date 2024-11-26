@@ -32,7 +32,7 @@ main {
     margin: 20px;
     padding: 20px;
     width: 33.33%;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .item2 {
@@ -51,8 +51,13 @@ section {
 
 #about img {
     width: 33.33%;
-    border-radius: 3%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    height: auto;
+    display: block;
+    border-radius: 5%;
 }
+
 
 .works {
     display: grid;
