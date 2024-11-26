@@ -146,12 +146,20 @@ footer {
     }
 
     #about img {
-        width: 80%;
-        border-radius: 3%;
+        margin: 10px 0;
+        /* 上下の余白を適度に確保 */
+        padding: 20px;
+        width: 100%;
+        /* スマホで全幅を占める */
+        border: 8px;
     }
 
     .item {
-        width: 90%;
+        margin: 10px 0;
+        /* 上下の余白を適度に確保 */
+        padding: 20px;
+        width: 100%;
+        /* スマホで全幅を占める */
     }
 
     .item2 {
@@ -159,6 +167,10 @@ footer {
         line-height: 150%;
         border: 1px solid #333333;
         border-radius: 8px;
-        width: 90%;
+        margin: 10px 0;
+        /* 上下の余白を適度に確保 */
+        padding: 20px;
+        width: 100%;
+        /* スマホで全幅を占める */
     }
 }
