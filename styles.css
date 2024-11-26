@@ -109,3 +109,40 @@ footer {
 #email:hover {
     color: #ADD8E6;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    /* スマホ専用のスタイルをここに記述 */
+    /* ナビゲーションの縦並び */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* 自己紹介セクションを縦並びに */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 作品セクションのグリッド調整 */
+    .works {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* スマホでは1列 */
+        gap: 20px;
+    }
+
+    /* ギャラリーの2列表示 */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* スマホで2列 */
+        gap: 10px;
+    }
+
+}
