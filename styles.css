@@ -1,172 +1,220 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Zen Old Mincho";
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f8f8f8;
-}
-
-header {
-    background-color: #ADD8E6;
+    color: white;
+    background-image: url(./images/headerBG.jpg);
+  }
+  
+  #site-header {
+    background-image: url(./images/headerBG.jpg);
     color: white;
     padding: 1em 0;
     text-align: center;
-}
-
-nav a {
+  }
+  
+  .site-nav a {
     margin: 0 15px;
+    font-size: 20px;
     color: white;
-    text-decoration: none;
+    text-decoration-line: underline;
     font-weight: bold;
-}
-
-main {
-    padding: 20px;
-}
-
-.container {
-    display: flex;
-}
-
-.item {
-    margin: 20px;
-    padding: 20px;
-    width: 33.33%;
-    font-size: 25px;
-}
-
-.item2 {
-    margin: 20px;
-    padding: 20px;
-    font-size: 22px;
-    width: 33.33%;
-    line-height: 230%;
-    border: 2px solid #333333;
-    border-radius: 8px;
-}
-
-section {
-    margin-bottom: 50px;
-}
-
-#about img {
-    width: 33.33%;
-    border-radius: 5%;
-}
-
-
-.works {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.works a {
-    font-size: 30px;
-    color: #333333;
-}
-
-.work a:hover {
+  }
+  
+  .site-nav a:hover {
     color: #ADD8E6;
-}
-
-.work {
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .intro-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .intro-image {
+    width: 300px;
+    border-radius: 5px;
+  }
+  
+  .intro-text {
+    margin: 20px;
+    padding: 20px;
+    width: 33.33%;
+    font-size: 20px;
+  }
+  
+  section {
+    margin-bottom: 50px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .gallery a {
+    text-decoration-line: none;
+    color: white;
+  }
+  .cert-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px 0;
+  }
+  
+  .cert-book {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .cert-text {
+    flex: 1 1 300px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  
+  
+  .blog-link {
+    font-size: 20px;
+    color: white;
+    text-decoration-line: underline;
+    font-weight: bold;
+  }
+  
+  .blog-link:hover {
+    color: #ADD8E6;
+  }
+  
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .work-card {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    color: #333;
     background-color: white;
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.work img {
+  }
+  
+  .work-card img {
     max-width: 100%;
     height: 300px;
     border-radius: 5px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-}
-
-.gallery img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-footer {
+  }
+  
+  .work-card a {
+    font-size: 30px;
+    color: #333333;
+  }
+  
+  .work-card a:hover {
+    color: #ADD8E6;
+  }
+  
+  footer {
     text-align: center;
     background-color: #333;
     color: white;
     padding: 10px 0;
-}
-
-#email {
-    color: #333333;
-}
-
-#email:hover {
-    color: #ADD8E6;
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: stretch;
-        /* 左寄せ */
-        padding: 0 15px;
-        /* 左右余白 */
-        gap: 20px;
-        /* 子要素間の間隔 */
+  }
+  
+  h1,
+  .thank-you {
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .intro-container {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0 15px;
+      gap: 20px;
     }
-
-    #about img {
-        width: 100%;
-        /* スマホでは全幅 */
-        max-width: 300px;
-        /* 最大幅を設定 */
-        margin: 0 auto;
-        /* 中央揃え */
-        display: block;
-        /* ブロック要素として扱う */
-        border-radius: 8px;
-        /* 角を丸く */
+  
+    .intro-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0;
+      margin: 0;
     }
-
-    .item {
-        font-size: 20px;
+  
+    .intro-text,
+    .cert-text {
+      width: 100%;
+      text-align: left;
+      padding: 15px;
+      box-sizing: border-box;
+      margin: 0 auto;
     }
-
-    .item,
-    .item2 {
-        margin: 0 auto;
-        /* 横方向の中央揃え */
-        width: 100%;
-        /* スマホでは全幅 */
-        text-align: left;
-        /* テキストを左寄せ */
-        padding: 15px;
-        /* 内側の余白 */
-        box-sizing: border-box;
-        /* パディングを含めて幅を計算 */
+  
+    .works-grid {
+      grid-template-columns: 1fr;
     }
-
-    .works {
-        display: grid;
-        grid-template-columns: 1fr;
-        /* 1列表示 */
-        gap: 20px;
-        /* 子要素間の間隔 */
-    }
-
+  
     .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* 2列表示 */
-        gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
     }
-}
+  
+    #games .gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    .cert-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .cert-book {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .work-card {
+      width: 100%;
+    }
+  
+    .work-card img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

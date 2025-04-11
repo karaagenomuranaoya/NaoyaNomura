@@ -6,122 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naoya Nomura's Laboratory</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Naoya Nomura's Laboratory</h1>
-        <nav>
-            <a href="#about">自己紹介</a>
-            <a href="#works">作品</a>
-            <a href="#hobbies">趣味</a>
-            <a href="#contact">連絡先</a>
-        </nav>
+    <header id="site-header">
+        <div>
+            <h1 class="site-title">Naoya Nomura's Laboratory</h1>
+            <nav class="site-nav">
+                <a href="#site-header">HOME</a>
+                <a href="#about-me">ABOUT ME</a>
+                <a href="#works">WORKS</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="about">
-            <h2>自己紹介</h2>
-            <div class="container">
-                <img src="images/IMG_4210.JPG" alt="プロフィール写真">
-                <div class="item">
-                    <p>こんにちは！<br>
-                        東京大学教育学部4年、野村直矢と申します。人と違うことをやりたい、他の誰でもない自分でいたいという気持ちが強く、あまり学生がやっていなそうなAzureを現在勉強しています。このポートフォリオもAzure
-                        App
-                        Serviceで動いているはずです。コーディングに関しては、Javaはずいぶん前に勉強したので、だいぶ忘れているかも、、、最新技術をどんどん学んでいきたいと思っています。どうぞよろしくお願いいたします。
-                    </p>
-                </div>
-                <div class="item2">
-                    <div>
-                        <h3>
-                            趣味：美味しいもの巡り、プログラミング学習、世界史の勉強（特にフランス革命。今のところ誰にも良さがわかってもらえてないけれど、どんなものでも「これだけは誰よりも知っている！」と思えるものがあると素敵だと思うんです。）<br>
-                            好きな食べ物：からあげ<br>
-                            座右の銘: 確固たるアイデンティティ<br>
-                            興味のある分野： Azure、AWS、AI、Java
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="works">
-            <h2>作品</h2>
-            <div class="works">
-                <div class="work">
-                    <a href="https://karaagepost.onrender.com/">
-                        <img src="images/nomupost.png" alt="掲示板">
-                    </a>
-                    <h3>のむポスト（現在休止中）</h3>
-                    <p>Javaのフレームワーク、Springを活用して作成した掲示板アプリです。投稿を作成し削除ができるほか、投稿ごとの詳細画面でコメントをつけることもできます。投稿やコメントはPostgreSQLのデータベースに保存されます。フレームワークは以前から習得しようとしていたのですが、いまいち仕組みがわからずその度に挫折してしまいました。そこで、まずはJavaを用いてサーブレットやJSPなどの低レベルな技術を学ぶことで、高レベルなSpringを理解できるようになりました。宙に浮いた理解ではなく、仕組みから理解することが応用においても重要であると学びました。(現状レスポンシブデザインに対応していないため、スマホで開くと表示が崩れる場合があります)
-                    </p>
-                    <a href="https://karaagepost.onrender.com/">詳しく見る</a>
-                </div>
-                <div class="work">
-                    <a href="https://todo-40i4.onrender.com/">
-                        <img src="images/todo.png" alt="TODO">
-                    </a>
-                    <h3>TODO</h3>
-                    <p>Reactで作ったTODOアプリです。useStatesで内容を保存するため、ページが更新されたりブラウザが再起動してもTODOが消えません。初めて作ったアプリで、Udemyの動画を見て、何度もエラーを出しながら作り上げた達成感は、今でもよく覚えています。父がスマホを持っていないため、大事な予定を忘れないようパソコンのブラウザ上で動くTODOアプリを作ってあげたいと思ったのが作成のきっかけです。もともと完了エリア側の削除ボタンはなかったのですが、父からの要望で新たに設置しました。とても喜んでもらい、プログラミングで作ったアプリが他の人の役に立つことの喜びを知りました。
-                    </p>
-                    <a href="https://todo-40i4.onrender.com/">詳しく見る</a>
-                </div>
-                <div class="work">
-                    <a href="https://tabeletennisscounter.onrender.com/">
-                        <img src="images/pinpon.png" alt="卓球得点表">
-                    </a>
-                    <h3>卓球得点表</h3>
-                    <p>前回のTODOは少し背伸びしたなという印象でした。今度はもう少し等身大で、調べつつも自分で作ることができる得点表アプリを選びました。ボタンを押すとそれぞれのプレイヤーの得点が加算され、勝ち負けが決まると勝者の得点が緑色に、敗者の得点が赤色に変わり、リセットボタンのみが押せる状態になります。何点先取か選べるようにしたことが工夫点です。CSSフレームワーク"bulma"を使用し、すっきりとした見た目に整えました。CSSフレームワークに親しむことができたのも大きな収穫でした。
-                    </p>
-                    <a href="https://tabeletennisscounter.onrender.com/">詳しく見る</a>
-                </div>
-                <div class="work">
-                    <a href="https://textcounter.onrender.com">
-                        <img src="images/textcounter.jpeg" alt="テキストカウンター">
-                    </a>
-                    <h3>テキストカウンター</h3>
-                    <p>入力されたテキストの文字数を数え、リアルタイムで表示します。保存機能がついているので、画面の更新やブラウザの再起動があってもテキストが保存されます。就職活動中、友達が別の文字数カウンターを使って3時間かけて作ったエントリーシートが、指を滑らせた表紙に画面を更新してしまい消滅するという事件がありました。この悲劇を決して繰り返してはいけない。このカウンターならうっかり更新してもへっちゃらです。早口原稿にならないように、ゆっくり読んで何秒かかるか表示する機能もつけました。友達にも感謝され、嬉しい限りです。
-                    </p>
-                    <a href="https://textcounter.onrender.com">詳しく見る</a>
-                </div>
-                <div class="work">
-                    <a href="https://shiritori-41oy.onrender.com/">
-                        <img src="images/shiritori.png" alt="しりとり道場">
-                    </a>
-                    <h3>しりとり道場</h3>
-                    <p>しりとり師範としりとりで遊べます。師範は難しい言葉ばかり使ってきます。なんと500語収録、充実の解説付き。師範はずるいので「ん」で終わっても続けてきます。こっちが「ん」で終わったら注意してくるくせに。「ゃ」で終わったら「や」、「しょー」で終わったら「よ」で始まるなど、しりとりのルールを厳守しています。師範の単語の終わりの文字と違う文字で始まる単語を入力すると、「しりとり知ってる？」と煽ってきます。君は果たして師範を倒し、しりとりマスターになれるのだろうか！
-                    </p>
-                    <a href="https://shiritori-41oy.onrender.com/">詳しく見る</a>
+        <section id="about-me">
+            <div class="intro-container">
+                <img class="intro-image" src="./images/sunset.jpg" alt="プロフィール写真">
+                <div class="intro-text">
+                    <p>こんにちは！野村直矢と申します</p>
+                    <p>今日はみなさんに自己紹介できればと思い</p>
+                    <p>このHPを作ってみました</p>
+                    <p>趣味や好きなことについて紹介するので</p>
+                    <p>気になるものがあればぜひ話しかけてください！</p>
                 </div>
             </div>
         </section>
 
         <section id="hobbies">
             <h2>趣味</h2>
-            <p>美味しいもの巡りが大好きです</p>
+            <p>美味しいもの巡りは外せません！画像を押すと食べログに飛べますよ〜</p>
             <div class="gallery">
                 <a href="https://tabelog.com/tokyo/A1303/A130301/13043926/">
-                    <img src="images/IMG_4861.jpg" alt="料理1">
+                    <img src="images/IMG_4861.jpg" alt="料理1">渋谷の親子丼屋さん。とてもふわとろで絶品です。
                 </a>
                 <a href="https://www.negishi.co.jp/">
-                    <img src="images/IMG_4700.jpg" alt="料理2">
+                    <img src="images/IMG_4700.jpg" alt="料理2">ねぎしです。チェーンですね。少し高いけど、ご飯おかわり無料にやられてついつい行ってしまう。最高記録はおかわり5杯です。
                 </a>
                 <a href="https://tabelog.com/tokyo/A1303/A130301/13242150/">
-                    <img src="images/IMG_4647.jpg" alt="料理3">
+                    <img src="images/IMG_4647.jpg"
+                        alt="料理3">デミグラスのオムライスというやつです。少し苦くて旨みたっぷりなデミグラスソースがたまらない。あっという間になくなってしまいました。
                 </a>
                 <a href="https://tabelog.com/tokyo/A1310/A131003/13085246/">
-                    <img src="images/IMG_4548.jpg" alt="料理4">
+                    <img src="images/IMG_4548.jpg" alt="料理4">二郎系ラーメン、、、好きなんですよね、やめられない。これは用心棒という有名店ですね。ラーメン好きの人いたらぜひ！
                 </a>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>連絡先</h2>
-            <p>メール: <a id="email" href="nomura.naoya.jobsearch@gmail.com">nomura.naoya.jobsearch@gmail.com</a></p>
+        <section id="games">
+            <p>最近できてませんが、ゲームも好きです。社会人になったらゲーミングPCを買うんだ！</p>
+            <div class="gallery">
+                <a href="#"><img src="./images/hikozaru.jpg" alt="ヒコザル">ポケモン好きです！DPはヒコザル</a>
+                <a href="#"><img src="./images/Aburn.jpg" alt="エースバーン">剣盾はエースバーン</a>
+                <a href="#"><img src="./images/nyaoha.jpg" alt="ニャオハ">バイオレットではニャオ派でした</a>
+            </div>
         </section>
+
+        <section id="certifications">
+            <p>少しだけ資格の勉強してます。4年になってから暇で、、、</p>
+            <p>"Oracle Certified Java Programmer, Silver SE 17"なる資格を勉強してます。</p>
+            <p>Javaは前ちょっとだけやってて、入社後の研修でも使うみたいなので、ちょうどいいかなと思いまして。</p>
+            <div class="cert-container">
+                <img class="cert-book" src="./images/kurohon.jpg" alt="資格の勉強本">
+                <div class="cert-text">
+                    <p>この本で、Javaの文法を学んでいます。</p>
+                    <p>まだ手つけ始めてすぐですが、いつか資格取りたいな〜</p>
+                    <p>なんと受験料3万7千円！！！</p>
+                    <p>絶対に一回で受からないと元が取れません。</p>
+                    <p>頑張りたいですね、役に立つと信じて。</p>
+                    <p>社員の皆さん、役に立ちますよね？ね？</p>
+                    <p>立つって言ってくださいよ！</p>
+                    <p>役に立つと信じて、しっかり精進します！</p>
+                </div>
+            </div>
+            <p>応用情報などなど、他にも取りたいの色々ありますね。</p>
+            <p>何か資格考えてる方いたら、ぜひお話ししましょう！</p>
+        </section>
+
+        <section id="blog">
+            <p>技術ブログをやってます。2日前から。</p>
+            <p>本から抜粋したJavaの問題などなど、色々書いていきたいですね。</p>
+            <a class="blog-link" href="https://zenn.dev/bunkei">技術ブログはこちら</a>
+        </section>
+
+        <section id="works">
+            <h2>作品</h2>
+            <p>お恥ずかしい拙作ですが、よかったらみてやってください。</p>
+            <div class="works-grid">
+                <div class="work-card">
+                    <a href="https://karaagepost.onrender.com/">
+                        <img src="images/nomupost.png" alt="掲示板">
+                        <h3>のむポスト（現在休止中）</h3>
+                    </a>
+                    <p>Spring Bootなるものを使ってJavaで作った掲示板です。ネットに上げてるとちょっとお金取られて悔しいので、現在休止してます。Chat GPTと一緒に、結構頑張った覚えがあります。
+                    </p>
+                    <a href="https://karaagepost.onrender.com/">詳しく見る</a>
+                </div>
+
+                <div class="work-card">
+                    <a href="https://todo-40i4.onrender.com/">
+                        <img src="images/todo.png" alt="TODO">
+                        <h3>TODO</h3>
+                    </a>
+                    <p>最初に作ったアプリです。普通のTODOです。Udemyで買った動画見ながらJavaScriptを写経しただけですが、意外と達成感あります。</p>
+                    <a href="https://todo-40i4.onrender.com/">詳しく見る</a>
+                </div>
+
+                <div class="work-card">
+                    <a href="https://tabeletennisscounter.onrender.com/">
+                        <img src="images/pinpon.png" alt="卓球得点表">
+                        <h3>卓球得点表</h3>
+                    </a>
+                    <p>卓球の得点が数えられるという、実用性が限りなく疑わしいアプリです。HTMLとCSS、Javascriptの基本的な使い方が学べた気がします。気がするだけですが。</p>
+                    <a href="https://tabeletennisscounter.onrender.com/">詳しく見る</a>
+                </div>
+
+                <div class="work-card">
+                    <a href="https://textcounter.onrender.com">
+                        <img src="images/textcounter.jpeg" alt="テキストカウンター">
+                        <h3>テキストカウンター</h3>
+                    </a>
+                    <p>これは結構気に入ってます。文字が数えられる。それだけですが、助かるのが保存機能。入力した文字はブラウザのキャッシュを消さない限り残るので、ブラウザ上で動くメモ帳として使えます。一番実用しているかもしれない。
+                    </p>
+                    <a href="https://textcounter.onrender.com">詳しく見る</a>
+                </div>
+
+                <div class="work-card">
+                    <a href="https://shiritori-41oy.onrender.com/">
+                        <img src="images/shiritori.png" alt="しりとり道場">
+                        <h3>しりとり道場</h3>
+                    </a>
+                    <p>しりとり師範としりとりで遊べます。師範は難しい言葉ばかり使ってきます。しりとりのルールに忠実にするのが疲れました。その100倍、師匠の語彙の辞書を作るのが疲れました。</p>
+                    <a href="https://shiritori-41oy.onrender.com/">詳しく見る</a>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="thank-you">最後まで読んでくれてありがとうございます！</h1>
     </main>
 
     <footer>
-        <p>&copy; 2024 Naoya Nomura</p>
+        <p>&copy; 2025 Naoya Nomura</p>
     </footer>
 </body>
 
